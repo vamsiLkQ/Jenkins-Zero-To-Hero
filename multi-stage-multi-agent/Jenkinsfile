@@ -6,7 +6,7 @@ pipeline {
         docker { image 'maven:3.9.6-eclipse-temurin-21' }
       }
       steps {
-        sh 'mvn --version'
+        sh 'mvn --version && sleep 60'
       }
     }
     stage('Front-end') {
